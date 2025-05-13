@@ -1,0 +1,145 @@
+
+<link rel="stylesheet" href="Devlaunch.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sidebar Navigation</title>
+ 
+<link rel="stylesheet" href="Devlaunch.css">
+</head>
+<body>
+
+  <button class="toggle-btn" onclick="toggleSidebar()">Toggle Menu</button>
+
+  <div class="sidebar" id="sidebar">
+    <a href="Index.html">About Me</a>
+    <a href="Freshman.html">Freshman</a>
+    <a href="Sophomore.html">Sophomore</a>
+    <a href="Junior.html">Junior</a>
+  </div>
+
+<style>
+      body {
+        margin: 0;
+        font-family: 'Consolas', 'Courier New', monospace;
+        background: #0e0e0e;
+        color: #ccc;
+      }
+  
+      .sidebar {
+        width: 240px;
+        background: linear-gradient(to bottom, #000000, #2e2e2e);
+        padding-top: 40px;
+        position: fixed;
+        height: 100%;
+        box-shadow: 0 0 20px #6a0dad88;
+      }
+  
+      .sidebar a {
+        display: block;
+        padding: 18px 25px;
+        color: #bbb;
+        text-decoration: none;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        border-left: 4px solid transparent;
+      }
+  
+      .sidebar a:hover {
+        background: #6a0dad;
+        color: #fff;
+        border-left: 4px solid white;
+        box-shadow: 0 0 15px #6a0dad;
+      }
+  
+      .content {
+        margin-left: 260px;
+        padding: 40px;
+      }
+  
+      h1 {
+        color: #fff;
+        font-size: 36px;
+      }
+  
+      .code-box {
+        background: #1a1a1a;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-left: 6px solid #6a0dad;
+        border-radius: 6px;
+        box-shadow: 0 0 10px #6a0dad55;
+        transition: transform 0.3s ease;
+      }
+  
+      .code-box:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 25px #6a0dad88;
+      }
+  
+      .code-box h2 {
+        color: #fff;
+        margin-bottom: 10px;
+      }
+  
+      .image-placeholder {
+        width: 100%;
+        height: 200px;
+        background: #222;
+        border: 1px dashed #6a0dad;
+        margin-top: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+  
+  
+  
+    <div class="content">
+      <h1>Sophomore Year</h1>
+  
+      <div class="code-box">
+        <h2>Object-Oriented Programming (OOP)</h2>
+        <p>This year focused on building software using OOP principles. I learned how to structure code using classes, objects, and methods to make it organized and reusable.</p>
+        <img src="encap.jpg" alt="" width="15%">
+      </div>
+  
+      <div class="code-box">
+        <h2>Encapsulation</h2>
+        <p>I used access modifiers like <code>private</code> and <code>public</code> to protect data and keep internal logic hidden from outside classes. Getters and setters allowed safe interaction with private variables.</p>
+        <div class="image-placeholder">Encapsulation Code Example Here</div>
+      </div>
+  
+      <div class="code-box">
+        <h2>Inheritance</h2>
+        <p>I created parent classes and extended them with child classes to reuse and customize behavior. This taught me how to build flexible systems and avoid code repetition.</p>
+        <div class="image-placeholder">Inheritance Diagram or Code Here</div>
+      </div>
+  
+      <div class="code-box">
+        <h2>Polymorphism</h2>
+        <p>I practiced method overriding and overloading to let objects respond differently based on context. This helped me understand abstraction and dynamic behavior in software design.</p>
+        <div class="image-placeholder">Polymorphism Example Image Here</div>
+      </div>
+  
+    </div>
+  
+
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('closed');
+      }
+    </script>
+  </body>
+  </html>
+  
